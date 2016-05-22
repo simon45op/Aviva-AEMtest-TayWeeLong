@@ -1,0 +1,50 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1463932624326
+Build-Jdk: 1.8.0_91
+Built-By: pewewurface
+Bundle-Description: Core bundle for avivatechnicaltest
+Bundle-ManifestVersion: 2
+Bundle-Name: avivatechnicaltest - Core
+Bundle-SymbolicName: org.aviva.technicaltest.core
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.aviva.technicaltest.core.filters;version="0.0.1";use
+ s:="javax.servlet",org.aviva.technicaltest.core.listeners;version="0.0.
+ 1";uses:="org.osgi.service.event",org.aviva.technicaltest.core.models;v
+ ersion="0.0.1";uses:="javax.annotation,javax.inject,org.apache.sling.ap
+ i.resource,org.apache.sling.models.annotations",org.aviva.technicaltest
+ .core;version="1.0",org.aviva.technicaltest.core.schedulers;version="0.
+ 0.1",org.aviva.technicaltest.core.servlets;version="0.0.1";uses:="javax
+ .servlet,org.apache.sling.api,org.apache.sling.api.servlets",org.aviva.
+ technicaltest.service;version="0.0.1";uses:="com.day.cq.search,org.apac
+ he.sling.api.resource"
+Import-Package: com.day.cq.search;version="[1.1,2)",com.day.cq.search.re
+ sult;version="[1.1,2)",javax.annotation,javax.inject;version="[0.0,1)",
+ javax.jcr;version="[2.0,3)",javax.servlet,org.apache.sling.api;version=
+ "[2.3,3)",org.apache.sling.api.request;version="[2.4,3)",org.apache.sli
+ ng.api.resource;version="[2.5,3)",org.apache.sling.api.servlets;version
+ ="[2.1,3)",org.apache.sling.commons.osgi;version="[2.2,3)",org.apache.s
+ ling.models.annotations;version="[1.0,2)",org.apache.sling.settings;ver
+ sion="[1.3,2)",org.osgi.service.event;version="[1.2,2)",org.slf4j;versi
+ on="[1.5,2)"
+Provide-Capability: osgi.service;effective:=active;objectClass="javax.se
+ rvlet.Servlet";service.vendor=Adobe,osgi.service;effective:=active;obje
+ ctClass="java.lang.Runnable";scheduler.expression="*/30 * * * * ?";sche
+ duler.concurrent=false;service.vendor=Adobe,osgi.service;effective:=act
+ ive;objectClass="javax.servlet.Filter";service.ranking=-700;sling.filte
+ r.scope=REQUEST;service.vendor=Adobe,osgi.service;effective:=active;obj
+ ectClass="org.aviva.technicaltest.service.TestService";service.vendor=A
+ dobe,osgi.service;effective:=active;objectClass="org.osgi.service.event
+ .EventHandler";event.topics="org/apache/sling/api/resource/Resource/*";
+ service.vendor=Adobe
+Require-Capability: osgi.service;effective:=active;filter:="(objectClass
+ =com.day.cq.search.QueryBuilder)",osgi.service;effective:=active;filter
+ :="(objectClass=org.apache.sling.api.resource.ResourceResolverFactory)"
+ ,osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Service-Component: OSGI-INF/org.aviva.technicaltest.core.filters.Logging
+ Filter.xml,OSGI-INF/org.aviva.technicaltest.service.TestService.xml,OSG
+ I-INF/org.aviva.technicaltest.core.schedulers.SimpleScheduledTask.xml,O
+ SGI-INF/org.aviva.technicaltest.core.listeners.SimpleResourceListener.x
+ ml,OSGI-INF/org.aviva.technicaltest.core.servlets.SimpleServlet.xml
+Sling-Model-Packages: org.aviva.technicaltest.core
+Tool: Bnd-2.3.0.201405100607

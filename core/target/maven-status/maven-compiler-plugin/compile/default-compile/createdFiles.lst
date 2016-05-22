@@ -1,0 +1,8 @@
+org\aviva\technicaltest\core\filters\LoggingFilter.class
+org\aviva\technicaltest\core\listeners\SimpleResourceListener.class
+org\aviva\technicaltest\service\TestService.class
+org\aviva\technicaltest\core\package-info.class
+org\aviva\technicaltest\core\models\HelloWorldModel.class
+org\aviva\technicaltest\core\models\TaggedLinkListModel.class
+org\aviva\technicaltest\core\schedulers\SimpleScheduledTask.class
+org\aviva\technicaltest\core\servlets\SimpleServlet.class
