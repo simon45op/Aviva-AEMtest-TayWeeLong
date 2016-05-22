@@ -4,10 +4,16 @@
     title="Properties"
     xtype="panel">
     <items jcr:primaryType="cq:WidgetCollection">
-        <text
+        <taggedsearched
             jcr:primaryType="cq:Widget"
-            fieldLabel="Text"
-            name="./text"
+            fieldLabel="Tags Searched"
+            name="./tagsSearched"
             xtype="textfield"/>
+        <resultincludingalltag
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Result Including All Tags"
+            name="./tagsCheckAll"
+            type="checkbox"
+            xtype="selection"/>
     </items>
 </jcr:root>

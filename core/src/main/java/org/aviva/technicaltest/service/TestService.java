@@ -73,7 +73,7 @@ private static final Logger LOGGER = LoggerFactory.getLogger(TestService.class);
             if(searchAllTags){
             map.put("property.and","true");
             } else {
-            map.put("proerty.and","false");
+            map.put("property.and","false");
             }
             map.put("property","jcr:content/cq:tags");
             String[] tagArray =  tagGroup.split(",");

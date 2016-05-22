@@ -8,11 +8,13 @@ import org.apache.felix.scr.annotations.Service;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.settings.SlingSettingsService;
 import org.aviva.technicaltest.service.TestService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.apache.felix.scr.annotations.Reference;
+
 import java.util.List;
 
 @Model(adaptables=Resource.class)
@@ -29,6 +31,11 @@ public class TaggedLinkListModel {
     private TestService query;
     
     private List<String>resultList;
+    @Inject 
+    private String tagsSearched; 
+    
+    @Inject @Optional
+    private String tagsCheckAll;
 
     @PostConstruct
     protected void init() {
@@ -38,15 +45,26 @@ public class TaggedLinkListModel {
     public void initModeList(){
     	
     	LOGGER.info("initializing model");
-        if(query !=null){
-        	LOGGER.info("query is not null");
-        } else {
-        	LOGGER.info("query is null");
-        }
-    	resultList =  query.getTaggedPages("geometrixx-outdoors:gender",false);
-        resultList.add("testing123");
+    	LOGGER.info("tagsSearched"+tagsSearched);
+    	if(tagsCheckAll == null){
+    		resultList = query.getTaggedPages(tagsSearched, false);
+    	} else {
+    		if(tagsCheckAll.equals("true")){
+    			resultList =  query.getTaggedPages(tagsSearched,true);
+    		} else {
+    			resultList =  query.getTaggedPages(tagsSearched,false);	
+    		}
+    	}
     }
     public List<String> getResultList() {
         return resultList;
+    }
+    
+    public String getTagsSearched(){
+    	return tagsSearched;
+    }
+    
+    public String getCheckAll(){
+    	return tagsCheckAll;
     }
 }

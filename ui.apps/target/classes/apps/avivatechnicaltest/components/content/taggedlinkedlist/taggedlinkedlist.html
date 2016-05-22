@@ -16,5 +16,7 @@
 <p data-sly-test="${properties.text}">Text property: ${properties.text}</p>
 
 <pre data-sly-use.tll="org.aviva.technicaltest.core.models.TaggedLinkListModel">
-
+<ul data-sly-list="${tll.resultList}">
+  <li>${item}</li>
+</ul>
 </pre>

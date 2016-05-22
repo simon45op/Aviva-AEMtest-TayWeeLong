@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1463932624326
+Bnd-LastModified: 1463937689078
 Build-Jdk: 1.8.0_91
 Built-By: pewewurface
 Bundle-Description: Core bundle for avivatechnicaltest
@@ -8,16 +8,16 @@ Bundle-Name: avivatechnicaltest - Core
 Bundle-SymbolicName: org.aviva.technicaltest.core
 Bundle-Version: 0.0.1.SNAPSHOT
 Created-By: Apache Maven Bundle Plugin
-Export-Package: org.aviva.technicaltest.core.filters;version="0.0.1";use
- s:="javax.servlet",org.aviva.technicaltest.core.listeners;version="0.0.
- 1";uses:="org.osgi.service.event",org.aviva.technicaltest.core.models;v
- ersion="0.0.1";uses:="javax.annotation,javax.inject,org.apache.sling.ap
- i.resource,org.apache.sling.models.annotations",org.aviva.technicaltest
+Export-Package: org.aviva.technicaltest.core.filters;uses:="javax.servle
+ t";version="0.0.1",org.aviva.technicaltest.core.listeners;uses:="org.os
+ gi.service.event";version="0.0.1",org.aviva.technicaltest.core.models;u
+ ses:="javax.annotation,javax.inject,org.apache.sling.api.resource,org.a
+ pache.sling.models.annotations";version="0.0.1",org.aviva.technicaltest
  .core;version="1.0",org.aviva.technicaltest.core.schedulers;version="0.
- 0.1",org.aviva.technicaltest.core.servlets;version="0.0.1";uses:="javax
- .servlet,org.apache.sling.api,org.apache.sling.api.servlets",org.aviva.
- technicaltest.service;version="0.0.1";uses:="com.day.cq.search,org.apac
- he.sling.api.resource"
+ 0.1",org.aviva.technicaltest.core.servlets;uses:="javax.servlet,org.apa
+ che.sling.api,org.apache.sling.api.servlets";version="0.0.1",org.aviva.
+ technicaltest.service;uses:="com.day.cq.search,org.apache.sling.api.res
+ ource";version="0.0.1"
 Import-Package: com.day.cq.search;version="[1.1,2)",com.day.cq.search.re
  sult;version="[1.1,2)",javax.annotation,javax.inject;version="[0.0,1)",
  javax.jcr;version="[2.0,3)",javax.servlet,org.apache.sling.api;version=
