@@ -2,10 +2,13 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2016-05-23T01:27:04.510+08:00"
+        cq:lastModifiedBy="admin"
+        cq:tags="[geometrixx-outdoors:gender]"
         jcr:primaryType="nt:unstructured"
         jcr:title="English"
-        pageTitle="New Project"
-        sling:resourceType="avivatechnicaltest/components/structure/page">
+        sling:resourceType="avivatechnicaltest/components/structure/page"
+        pageTitle="New Project">
         <logo
             jcr:primaryType="nt:unstructured"
             sling:resourceType="avivatechnicaltest/components/structure/logo"/>
@@ -21,16 +24,24 @@
             <title_0
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Service Component"
-                type="h2"
-                sling:resourceType="avivatechnicaltest/components/content/title"/>
+                sling:resourceType="avivatechnicaltest/components/content/title"
+                type="h2"/>
+            <taggedlinkedlist
+                jcr:created="{Date}2016-05-23T01:22:56.665+08:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-05-23T01:27:04.497+08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="avivatechnicaltest/components/content/taggedlinkedlist"
+                tagsSearched="geometrixx-outdoors:gender"/>
             <servicecomponent
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="avivatechnicaltest/components/content/helloworld"/>
             <title_1
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Lorem ipsum"
-                type="h2"
-                sling:resourceType="avivatechnicaltest/components/content/title"/>
+                sling:resourceType="avivatechnicaltest/components/content/title"
+                type="h2"/>
             <text
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="avivatechnicaltest/components/content/text"
@@ -65,7 +76,11 @@
                 sling:resourceType="avivatechnicaltest/components/content/image"
                 fileReference="/content/dam/avivatechnicaltest/asset.jpg"/>
         </par>
-        <image jcr:primaryType="nt:unstructured">
+        <image
+            jcr:lastModified="{Date}2016-05-23T01:22:02.073+08:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0">
             <file/>
         </image>
     </jcr:content>
