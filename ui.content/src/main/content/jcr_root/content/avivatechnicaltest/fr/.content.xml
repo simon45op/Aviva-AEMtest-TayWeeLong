@@ -2,6 +2,9 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2016-07-06T16:27:40.879+08:00"
+        cq:lastModifiedBy="admin"
+        cq:tags="[geometrixx-outdoors:season]"
         jcr:language="fr"
         jcr:primaryType="nt:unstructured"
         jcr:title="Français"
@@ -66,7 +69,11 @@
                 sling:resourceType="avivatechnicaltest/components/content/image"
                 fileReference="/content/dam/avivatechnicaltest/asset.jpg"/>
         </par>
-        <image jcr:primaryType="nt:unstructured">
+        <image
+            jcr:lastModified="{Date}2016-07-06T16:27:40.865+08:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0">
             <file/>
         </image>
     </jcr:content>
