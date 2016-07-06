@@ -93,7 +93,7 @@ private static final Logger LOGGER = LoggerFactory.getLogger(TestService.class);
 		    String hitPath = "";
 			for (Hit hit : queryResult.getHits()){
 				try {
-					hitPath = hit.getPath();
+					hitPath = hit.getPath() + ".html";
 					searchResultPage.add(hitPath);
 					LOGGER.info("adding page"+hitPath);
 				} catch (Exception e){

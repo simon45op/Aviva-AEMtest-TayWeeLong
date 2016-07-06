@@ -1,5 +1,5 @@
 #surefire
-#Wed May 25 17:02:22 SGT 2016
+#Wed Jul 06 16:18:02 SGT 2016
 tc.0=org.aviva.technicaltest.core.models.TestHelloWorldModel
 classPathUrl.0=C\:\\Users\\pewewurface\\workspace\\technicaltest\\core\\target\\test-classes
 classPathUrl.1=C\:\\Users\\pewewurface\\workspace\\technicaltest\\core\\target\\classes
