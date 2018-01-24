@@ -43,7 +43,6 @@ public class TaggedLinkListModel {
     }
 
     public void initModeList(){
-    	Test Fail Build
     	LOGGER.info("initializing model");
     	LOGGER.info("tagsSearched"+tagsSearched);
     	if(tagsCheckAll == null){
